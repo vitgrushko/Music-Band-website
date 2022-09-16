@@ -1,0 +1,1615 @@
+/**************************** 
+      СТРАНИЦА-1 ГЛАВНАЯ
+****************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: whitesmoke;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  text-rendering: optimizeLegibility;
+  /* mobile viewport bug fix*/
+  min-height: -webkit-fill-available;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: -webkit-fill-available;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header_body {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+.logo_language_container {
+  width: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 0px 15px;
+}
+
+.little_logo {
+  flex: 0 0 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+
+.little_logo img {
+  max-width: 100%;
+  display: block;
+}
+
+.little_logo:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.header_language {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 0px 25px;
+  z-index: 5;
+}
+
+.header_language p {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 0.5em;
+  opacity: 0.7;
+}
+
+.change-lang {
+  width: 55px;
+  height: 35px;
+  background-color: black;
+  color: whitesmoke;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 0.5em;
+  opacity: 0.7;
+}
+
+.change-lang:hover {
+  opacity: 1;
+}
+
+.header_burger {
+  display: none;
+}
+
+.menu_media_list {
+  display: none;
+}
+
+.header_menu {
+  position: relative;
+  display: flex;
+  z-index: 2;
+}
+
+.menu_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  z-index: 2;
+  width: 600px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.menu_list li :hover {
+  color: #e30d33;
+  font-weight: bolder;
+}
+
+.media_list li i:hover {
+  color: #e30d33;
+  font-weight: bolder;
+  transition: 0.5s;
+}
+
+.menu_media_list li i:hover {
+  color: #e30d33;
+  font-weight: bolder;
+  transition: 0.5s;
+}
+
+.menu_list li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  transition: 0.5s;
+  font-size: 0.6em;
+  font-weight: bolder;
+}
+
+.header_media {
+  height: auto;
+  width: 200px;
+  position: relative;
+  display: flex;
+  z-index: 2;
+  margin: 0px 15px 0px 0px;
+}
+
+.media_list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.media_list li a {
+  text-decoration: none;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  opacity: 0.9;
+  font-size: 0.5em;
+  transition: 0.5s;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  background-image: url(../images/Grandma`s_Smuzi_img_7.jpg);
+  background-attachment: fixed;
+  height: 100vh;
+  /* background-position: top 25% center; */
+  background-position: 75% 25%;
+  background-size: cover;
+}
+
+.big_logo {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  width: 100%;
+  height: 330px;
+  /* height: 450px; */
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+}
+
+#big-logo {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: auto;
+  width: 700px;
+  margin: 0 auto;
+}
+
+/**************************** 
+            ХЕШТЕГ
+****************************/
+
+.hashtag-parag p {
+  background: linear-gradient(rgba(0, 91, 187, 1), rgba(255, 213, 0, 1));
+  height: 100px;
+  width: 100%;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bolder;
+  color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  justify-content: center;
+}
+
+/**************************** 
+      СТРАНИЦА-2 ТУР
+****************************/
+
+#tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(27, 37, 50, 0.7)),
+    url(../images/Grandma`s_Smuzi_img_6.jpg);
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 50px;
+}
+
+#tour-header {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  background-size: cover;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bolder;
+  padding: 100px 15px 30px 15px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: antiquewhite;
+}
+
+#tour-header p {
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: none;
+  color: whitesmoke;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto 40px auto;
+  padding: 30px 0px 0px 0px;
+}
+
+#tour-header span {
+  opacity: 0.8;
+}
+
+#tour-info {
+  max-width: 1100px;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#tour-info li {
+  padding: 30px 10px 5px 10px;
+  border-bottom: 2px solid darkgray;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 210px);
+  gap: 0 9.5vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#tour-info li div a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#city-place {
+  flex-direction: column;
+}
+
+.date {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  line-height: 70px;
+}
+
+.city {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.place {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 205px;
+}
+
+.ticket p {
+  background: rgba(10, 58, 92, 0.7);
+  text-transform: lowercase;
+  font-weight: bolder;
+  font-size: 22px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid whitesmoke;
+  height: 50px;
+}
+
+.ticket p:hover {
+  background: #e0dfe0;
+  transition: 0.5s;
+}
+
+#tour-info li div a:hover {
+  color: rgb(10, 58, 92);
+}
+
+/**************************** 
+      СТРАНИЦА-3 МУЗЫКА
+****************************/
+
+#music {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(27, 37, 50, 0.7)),
+    url(../images/Grandma`s_Smuzi_img_1.jpg);
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding-bottom: 100px;
+}
+
+#music-header {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 100px 30px 30px 30px;
+  color: antiquewhite;
+}
+
+#music-header span {
+  opacity: 0.8;
+}
+
+#music p {
+  font-size: 30px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+#btn-music {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+#btn-spotify {
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#btn-spotify i {
+  color: whitesmoke;
+  transition: 0.5s;
+}
+
+#btn-spotify i:hover {
+  color: rgb(163, 95, 35);
+}
+
+#btn-apple {
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+}
+
+#btn-apple i {
+  color: whitesmoke;
+  transition: 0.5s;
+}
+
+#btn-apple i:hover {
+  color: rgb(163, 95, 35);
+}
+
+#btn-youtube-music {
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#btn-youtube-music i {
+  color: whitesmoke;
+  transition: 0.5s;
+}
+
+#btn-youtube-music i:hover {
+  color: rgb(163, 95, 35);
+}
+
+#btn-deezer {
+  font-size: 35px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#btn-deezer i {
+  color: whitesmoke;
+  transition: 0.5s;
+}
+
+#btn-deezer i:hover {
+  color: rgb(163, 95, 35);
+}
+
+#audio-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#audio-equalizer {
+  max-width: calc(10 * 35px + 9 * 15px);
+  width: auto;
+  height: 100px;
+  position: relative;
+  margin: 0px auto 10px auto;
+  transform: rotate(180deg);
+}
+
+#audio-equalizer div {
+  width: 35px;
+  height: inherit;
+  background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(163, 95, 35, 0.5));
+  position: absolute;
+  -webkit-animation-name: equalizer;
+  animation-name: equalizer;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  padding: 0 15px;
+}
+
+#audio-equalizer div:nth-child(1) {
+  left: 0;
+  -webkit-animation-duration: 2.7s;
+  animation-duration: 2.7s;
+}
+
+#audio-equalizer div:nth-child(2) {
+  left: 50px;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+#audio-equalizer div:nth-child(3) {
+  left: calc(2 * 50px);
+  -webkit-animation-duration: 3.1s;
+  animation-duration: 3.1s;
+}
+
+#audio-equalizer div:nth-child(4) {
+  left: calc(3 * 50px);
+  -webkit-animation-duration: 2.8s;
+  animation-duration: 2.8s;
+}
+
+#audio-equalizer div:nth-child(5) {
+  left: calc(4 * 50px);
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+#audio-equalizer div:nth-child(6) {
+  left: calc(5 * 50px);
+  -webkit-animation-duration: 2.6s;
+  animation-duration: 2.6s;
+}
+
+#audio-equalizer div:nth-child(7) {
+  left: calc(6 * 50px);
+  -webkit-animation-duration: 3.2s;
+  animation-duration: 3.2s;
+}
+
+#audio-equalizer div:nth-child(8) {
+  left: calc(7 * 50px);
+  -webkit-animation-duration: 2.9s;
+  animation-duration: 2.9s;
+}
+
+#audio-equalizer div:nth-child(9) {
+  left: calc(8 * 50px);
+  -webkit-animation-duration: 2.7s;
+  animation-duration: 2.7s;
+}
+
+#audio-equalizer div:nth-child(10) {
+  left: calc(9 * 50px);
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes equalizer {
+  0% {
+    height: 60px;
+  }
+
+  10% {
+    height: 50px;
+  }
+
+  20% {
+    height: 80px;
+  }
+
+  30% {
+    height: 30px;
+  }
+
+  40% {
+    height: 20px;
+  }
+
+  50% {
+    height: 80px;
+  }
+
+  60% {
+    height: 40px;
+  }
+
+  70% {
+    height: 70px;
+  }
+
+  80% {
+    height: 50px;
+  }
+
+  90% {
+    height: 80px;
+  }
+
+  100% {
+    height: 100px;
+  }
+}
+
+@keyframes equalizer {
+  0% {
+    height: 60px;
+  }
+
+  10% {
+    height: 50px;
+  }
+
+  20% {
+    height: 80px;
+  }
+
+  30% {
+    height: 30px;
+  }
+
+  40% {
+    height: 20px;
+  }
+
+  50% {
+    height: 80px;
+  }
+
+  60% {
+    height: 40px;
+  }
+
+  70% {
+    height: 70px;
+  }
+
+  80% {
+    height: 50px;
+  }
+
+  90% {
+    height: 80px;
+  }
+
+  100% {
+    height: 100px;
+  }
+}
+
+#audio-player {
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  border-top: 3px solid whitesmoke;
+  border-right: 3px solid whitesmoke;
+  border-left: 3px solid whitesmoke;
+  display: flex;
+  margin: 0px 15px;
+}
+
+#audio-player img {
+  width: 45%;
+  height: auto;
+  margin: auto;
+}
+
+#playlist {
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  margin: auto;
+  border: 3px solid whitesmoke;
+  margin: 0px 15px 0px 15px;
+  overflow-y: scroll;
+  max-height: 450px;
+}
+
+.trackbar {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+  min-height: 50px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  align-items: center;
+  border-bottom: 2px solid darkgrey;
+}
+
+.playbutton {
+  opacity: 0.8;
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 10px 0px 0px 10px;
+  background: url(../images/ak_playbtn.png) no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.playbutton:hover {
+  opacity: 1;
+}
+.trackname {
+  float: left;
+  color: whitesmoke;
+  margin: 10px 0px 0px 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.tracktime {
+  font-size: 18px;
+  margin: 10px 0px 0px 10px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+/**************************** 
+      СТРАНИЦА-4 ВИДЕО
+****************************/
+
+#video {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(27, 37, 50, 0.8)),
+    url(../images/Grandma`s_Smuzi_img_4.jpg);
+  max-height: auto;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#video-header {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 100px 30px 30px 30px;
+  color: antiquewhite;
+}
+
+#video-header span {
+  opacity: 0.8;
+}
+
+#video p {
+  font-size: 30px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#btn-video {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+#btn-youtube {
+  font-size: 35px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#btn-youtube i {
+  color: whitesmoke;
+  font-size: 60px;
+  transition: 0.5s;
+}
+
+#btn-youtube i:hover {
+  color: #ff0000;
+}
+
+#video-player {
+  height: auto;
+  /* min-height: 100vh; */
+  padding: 10px 0;
+}
+
+.items-container {
+  max-width: 1500px;
+  padding: 0px 15px;
+  margin: auto;
+}
+
+.items-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 50px;
+}
+
+.item-video {
+  position: relative;
+  margin: 0px 0px 15px 0px;
+  padding: 0px 0px 67% 0px;
+}
+
+.item-video video,
+.item-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.item-text {
+  font-size: 20px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  line-height: 150%;
+}
+
+#more-video {
+  text-align: center;
+  max-width: 340px;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#more-video a {
+  text-decoration: none;
+  color: antiquewhite;
+  transition: 0.5s;
+}
+
+#more-video a:hover {
+  color: #ff0000;
+}
+
+/**************************** 
+      СТРАНИЦА-5 ГРУПА
+****************************/
+
+#group {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(27, 37, 50, 0.9)),
+    url(../images/Grandma`s_Smuzi_img_10.jpg);
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#group-header {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin: 0 auto;
+  padding: 100px 30px 30px 30px;
+  color: antiquewhite;
+}
+
+#group-header span {
+  opacity: 0.8;
+}
+
+#group p {
+  font-size: 22px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+#group-members {
+  list-style: none;
+  width: 100%;
+  height: auto;
+  padding: 100px 0px;
+}
+
+#group-members li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.group-photo {
+  max-width: 100%;
+}
+
+.group-photo img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+.group-photo p {
+  width: 100%;
+  padding: 5px;
+}
+
+#group-merch {
+  width: 50%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#group-merch div {
+  display: flex;
+  margin: auto;
+}
+
+#merch-header {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bolder;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: antiquewhite;
+}
+
+#merch-header span {
+  opacity: 0.8;
+}
+
+#merch-price {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+#merch-price a {
+  background-color: #e30d33;
+  text-transform: uppercase;
+  width: 150px;
+  height: 150px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: whitesmoke;
+  border: 3px solid whitesmoke;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#merch-price a:hover {
+  background-color: whitesmoke;
+  color: #e30d33;
+  transition: 0.5s;
+}
+
+#group-merch img {
+  max-width: 100%;
+}
+
+/**************************** 
+          КОНТАКТЫ
+****************************/
+#contacts {
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#contacts-logo {
+  text-align: center;
+  padding: 80px 30px 30px 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#contacts-logo span {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bolder;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: antiquewhite;
+  opacity: 0.8;
+}
+
+#email,
+#phone {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#email a,
+#phone a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#email a:hover,
+#phone a:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+#contacts-media {
+  font-size: 30px;
+  display: flex;
+  max-width: 500px;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  list-style: none;
+  border-bottom: 2px solid #6a676a;
+  margin-bottom: 20px;
+}
+
+#contacts-media li a {
+  color: antiquewhite;
+}
+
+#contacts-media i {
+  opacity: 0.7;
+}
+
+#contacts-media i:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#contacts-copy {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #6a676a;
+  padding-bottom: 20px;
+}
+
+/**************************** 
+          MEDIA QUERIES
+****************************/
+
+/*-----------ГОЛОВНА----------*/
+
+@media only screen and (max-width: 1300px) {
+  .menu_list {
+    width: 46vw;
+  }
+
+  .menu_list li a {
+    font-size: 1.85vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body._lock {
+    overflow: hidden;
+  }
+
+  .header_media {
+    display: none;
+  }
+
+  .menu_list {
+    display: block;
+    line-height: 2em;
+    margin: 0 auto;
+  }
+  .menu_list li a {
+    font-size: 0.6em;
+  }
+
+  .menu_media_list {
+    display: block;
+  }
+
+  .menu_media_list ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid lightgray;
+  }
+
+  .menu_media_list li a {
+    font-size: 0.5em;
+  }
+
+  .header_body {
+    height: 60px;
+  }
+
+  .little_logo {
+    flex: 0 0 50px;
+  }
+
+  .header_menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(27, 37, 50, 0.95));
+    padding: 70px 0px 0px 0px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    margin: 0 auto;
+    overflow: auto;
+  }
+
+  .header_menu::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-color: black;
+    z-index: 3;
+  }
+
+  .header_menu._active {
+    top: 0;
+  }
+
+  .header_burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 5;
+    margin: 0px 15px 0px 0px;
+  }
+
+  .header_burger span {
+    position: absolute;
+    background-color: whitesmoke;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header_burger:before,
+  .header_burger:after {
+    content: "";
+    background-color: whitesmoke;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header_burger:before {
+    top: 0;
+  }
+
+  .header_burger:after {
+    bottom: 0;
+  }
+
+  .header_burger._active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header_burger._active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header_burger._active span {
+    transform: scale(0);
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  #main {
+    background-position: 75% 25%;
+  }
+
+  .big_logo {
+    height: 55vw;
+  }
+
+  #big-logo {
+    width: 87.5vw;
+  }
+}
+
+@media only screen and (max-height: 550px) {
+  #main {
+    background-position: top 0% center;
+  }
+
+  .big_logo {
+    height: 41.3vh;
+  }
+
+  #big-logo {
+    width: 87.5vh;
+  }
+}
+
+/*-----------ХЕШТЕГ----------*/
+
+@media only screen and (max-width: 500px) {
+  .hashtag-parag p {
+    font-size: 8vw;
+  }
+}
+
+/*-----------ТУР----------*/
+
+@media only screen and (max-width: 840px) {
+  #tour-info li {
+    padding: 30px 10px 5px 10px;
+    border-bottom: 2px solid darkgray;
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #tour-header p {
+    margin: 0 auto;
+  }
+
+  #tour-info li div {
+    width: 210px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .ticket p {
+    background: rgba(10, 58, 92, 0.7);
+    text-transform: lowercase;
+    font-weight: bolder;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid whitesmoke;
+    height: 50px;
+    width: 210px;
+  }
+
+  .place {
+    padding-bottom: 10px;
+  }
+}
+
+/*-----------МУЗЫКА----------*/
+
+@media only screen and (max-width: 550px) {
+  #audio-container {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  #audio-equalizer {
+    max-width: calc(10 * 6.5vw + 9 * 2.5vw);
+    width: auto;
+    height: 100px;
+    position: relative;
+    margin: 0px auto 10px auto;
+    transform: rotate(180deg);
+  }
+
+  #audio-equalizer div {
+    width: 6.5vw;
+    height: inherit;
+    background: linear-gradient(
+      rgba(245, 245, 245, 0.8),
+      rgba(163, 95, 35, 0.5)
+    );
+    position: absolute;
+    -webkit-animation-name: equalizer;
+    animation-name: equalizer;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    padding: 0 2.5vw;
+  }
+
+  #audio-equalizer div:nth-child(1) {
+    left: 0;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+  }
+
+  #audio-equalizer div:nth-child(2) {
+    left: 9vw;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+  }
+
+  #audio-equalizer div:nth-child(3) {
+    left: calc(2 * 9vw);
+    -webkit-animation-duration: 3.1s;
+    animation-duration: 3.1s;
+  }
+
+  #audio-equalizer div:nth-child(4) {
+    left: calc(3 * 9vw);
+    -webkit-animation-duration: 2.8s;
+    animation-duration: 2.8s;
+  }
+
+  #audio-equalizer div:nth-child(5) {
+    left: calc(4 * 9vw);
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+  }
+
+  #audio-equalizer div:nth-child(6) {
+    left: calc(5 * 9vw);
+    -webkit-animation-duration: 2.6s;
+    animation-duration: 2.6s;
+  }
+
+  #audio-equalizer div:nth-child(7) {
+    left: calc(6 * 9vw);
+    -webkit-animation-duration: 3.2s;
+    animation-duration: 3.2s;
+  }
+
+  #audio-equalizer div:nth-child(8) {
+    left: calc(7 * 9vw);
+    -webkit-animation-duration: 2.9s;
+    animation-duration: 2.9s;
+  }
+
+  #audio-equalizer div:nth-child(9) {
+    left: calc(8 * 9vw);
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+  }
+
+  #audio-equalizer div:nth-child(10) {
+    left: calc(9 * 9vw);
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .trackname {
+    float: left;
+    color: whitesmoke;
+    margin: 10px 0px 0px 10px;
+    font-size: 4.5vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .tracktime {
+    font-size: 4.5vw;
+    margin: 10px 0px 0px 10px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/*-----------ПРО НАС----------*/
+
+@media only screen and (max-width: 1055px) {
+  #group-members {
+    padding: 30px 0px;
+  }
+
+  #group-members li {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  #group-members {
+    padding: 30px 15px;
+  }
+
+  #group-members li {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+}
+
+/*-----------МЕРЧ----------*/
+
+@media only screen and (max-width: 1055px) {
+  #group-merch {
+    width: 100%;
+    display: block;
+    margin: 0, auto;
+  }
+
+  #group-merch #merch-image-1 {
+    display: none;
+  }
+
+  #group-merch img {
+    /* background-color: aqua; */
+    max-width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #merch-price {
+    padding-top: 20px;
+  }
+
+  #merch-price a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  #group-merch {
+    width: 100%;
+    display: block;
+    margin: 0, auto;
+  }
+
+  #group-merch #merch-image-1 {
+    display: none;
+  }
+
+  #group-merch img {
+    /* background-color: aqua; */
+    max-width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #merch-price {
+    padding-top: 20px;
+  }
+
+  #merch-price a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*-----------ПРОКРУТКА ВСЕХ BACKGROUND----------*/
+
+@media only screen and (max-height: 915px) {
+  #main {
+    background-attachment: scroll;
+  }
+  #tour {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(27, 37, 50, 0.7)
+    );
+    background-attachment: scroll;
+  }
+  #music {
+    background-attachment: scroll;
+  }
+  #video {
+    background-attachment: scroll;
+  }
+  #group {
+    background-attachment: scroll;
+  }
+}
+
+/*-----------АДАПТИВНОСТЬ ВСЕХ ШРИФТОВ----------*/
+
+@media only screen and (max-width: 450px) {
+  #tour-header {
+    font-size: 13.5vw;
+  }
+
+  #tour-header p {
+    font-size: 4.8vw;
+  }
+
+  .date {
+    font-size: 7.7vw;
+    line-height: 15.4vw;
+  }
+
+  .city {
+    font-size: 6.6vw;
+  }
+
+  .place {
+    font-size: 4vw;
+  }
+
+  .ticket p {
+    font-size: 5vw;
+    height: 11vw;
+  }
+
+  #music-header {
+    font-size: 13.5vw;
+  }
+
+  #music p {
+    font-size: 6.5vw;
+  }
+
+  #video-header {
+    font-size: 13.5vw;
+  }
+
+  #video p {
+    font-size: 6.5vw;
+  }
+
+  .items-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(88vw, 1fr));
+    gap: 5vw;
+  }
+
+  .item-text {
+    font-size: 4.8vw;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    line-height: 150%;
+  }
+
+  #more-video {
+    font-size: 6.5vw;
+  }
+
+  #group-header {
+    font-size: 13.5vw;
+  }
+
+  #group p {
+    font-size: 4.8vw;
+  }
+
+  #merch-header {
+    font-size: 13.5vw;
+  }
+
+  #merch-price a {
+    width: 33vw;
+    height: 33vw;
+  }
+
+  #contacts-logo span {
+    font-size: 13.5vw;
+  }
+
+  #email,
+  #phone {
+    font-size: 4.5vw;
+  }
+
+  #contacts-media {
+    font-size: 6.5vw;
+  }
+
+  #contacts-copy {
+    font-size: 3.3vw;
+  }
+}
