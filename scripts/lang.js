@@ -242,7 +242,7 @@ var langArr = {
   group_vocal: {
     ru: "Туфан Чигдем<br />вокал, гитара",
     en: "Tufan Chigdem<br />vocals, guitar",
-    ua: "Туфан Чигдем<br />вокал, гітара",
+    ua: "Туфан Чігдем<br />вокал, гітара",
   },
   group_guitar: {
     ru: "Дмитрий Савенко<br />гитара",
